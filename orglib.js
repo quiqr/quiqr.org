@@ -6,7 +6,7 @@ function getURL() {
     document.getElementById("repourl").innerHTML='<p><a href="quiqr://'+link[1]+'?proto='+link[0]+'">Open in Quiqr</a></p>';
   }
   else{
-    window.location.href = "https://github.com/quiqr";
+    window.location.href = "https://launch.quiqr.org";
   }
 }
 
