@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?><rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Pages on Quiqr</title><link>/page/</link><description>Recent content in Pages on Quiqr</description><generator>Hugo -- gohugo.io</generator><language>en</language><copyright>Copyright © 2021, Quiqr.org</copyright><atom:link href="/page/index.xml" rel="self" type="application/rss+xml"/><item><title>Community</title><link>/page/community/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/community/</guid><description>Quiqr is an open source project and we strive to form an healty, open and inspiring community. For everyone who likes to give a positive contribution&amp;hellip; feel welcome!
+We are organized on GitHub and currently our main projects are&amp;hellip;
+Quiqr Desktop - The Quiqr Desktop Application project, Quiqr Desktop is currently powered by ElectronJS Quiqr Community Templates - Community driven list of Hugo site templates with a Quiqr Content Model The Quiqr Book - The Quiqr documentation project for users and developers Embgit - Quiqr&amp;rsquo;s integrated Git Client written in Go.</description></item><item><title>Download</title><link>/page/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/download/</guid><description>Quiqr is available for Mac, Windows and Linux. Here are the latest installers.
+Quiqr for Mac Open the disk image and copy the Quiqr app to your Applications folder.
+Quiqr for Windows After download execute the .exe-file to install Quiqr.
+Quiqr for Linux Quiqr for Linux AppImage
+Quiqr for Linux Deb
+Quiqr for Linux RPM
+You can also find Quiqr in Snapcraft Store.</description></item><item><title>hugoconf</title><link>/page/hugoconf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/hugoconf/</guid><description>Quiqr went public at the Hugo Conf 2022. We want to thanks the people of the HugoConf for giving us time and space to promote our project.
+The slides of the Pim&amp;rsquo;s Lightning Talk Pim are available for reading back and you can download these slides as Quiqr Template too.</description></item><item><title>Screenshots</title><link>/page/screenshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/screenshots/</guid><description>Quiqr looks like this&amp;hellip; ready to use templates
+import Quiqr templates or Hugo Themes
+powerful CMS
+multiple sync targets, e.g. publish to GitHub Pages</description></item></channel></rss>
