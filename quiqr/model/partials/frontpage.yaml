@@ -1,0 +1,10 @@
+---
+title: Front page
+description: Frontpage text and features
+file: /content/_index.md
+fields:
+  - key: mainContent
+    title: Main content
+    type: markdown
+
+

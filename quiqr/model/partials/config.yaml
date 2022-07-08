@@ -1,0 +1,143 @@
+---
+title: Site Config
+description: Hugo & Site Configuration values
+file: config.toml
+fields:
+  - key: title
+    title: Site Title
+    type: string
+    tip: Your page title. [Read more on hugo hq](https://gohugo.io)
+  - key: baseURL
+    title: Base URL
+    type: string
+  - key: copyright
+    title: copyright
+    type: string
+  - key: author
+    title: Author
+    type: string
+  - key: paginate
+    title: Paginate Number
+    type: number
+
+  - key: languageCode
+    title: Language Code
+    type: string
+
+  - key: DefaultContentLanguage
+    title: Default Language Code
+    type: string
+
+  - key: taxonomies
+    type: nest
+    groupdata: true
+    title: Taxonomies
+    fields:
+      - key: category
+        title: Categories
+        type: string
+      - key: tag
+        title: Tags
+        type: string
+      - key: series
+        title: Series
+        type: string
+
+  - key: menu
+    type: pull
+    group: menu
+    title: Menu
+    fields:
+      - key: main
+        groupdata: true
+        title: Menu
+        type: accordion
+        fields:
+          - key: identifier
+            arrayTitle: true
+            title: identifier
+            type: string
+          - key: name
+            title: Name
+            type: string
+          - key: url
+            title: url
+            type: string
+          - key: weight
+            title: weight
+            type: number
+
+  - key: params
+    type: nest
+    groupdata: true
+    title: Social
+    fields:
+      - key: twitter
+        title: Twitter Username
+        type: string
+        tip: e.g. bepsays
+      - key: github
+        title: GitHub Username
+        type: string
+      - key: instagram
+        title: Instagram Username
+        type: string
+
+  - key: privacy
+    type: nest
+    groupdata: true
+    title: Privacy
+    fields:
+      - key: vimeo
+        type: section
+        groupdata: true
+        title: Vimeo
+        fields:
+          - key: disabled
+            title: Disabled
+            type: boolean
+          - key: simple
+            title: Simple
+            type: boolean
+
+      - key: twitter
+        type: section
+        groupdata: true
+        title: Twitter
+        fields:
+          - key: disabled
+            title: Disabled
+            type: boolean
+          - key: enableDNT
+            title: Enable DNT
+            type: boolean
+          - key: simple
+            title: Simple
+            type: boolean
+
+      - key: instagram
+        type: section
+        groupdata: true
+        title: Instagram
+        fields:
+          - key: disabled
+            title: Disabled
+            type: boolean
+          - key: simple
+            title: Simple
+            type: boolean
+
+      - key: youtube
+        type: section
+        groupdata: true
+        title: YouTube
+        fields:
+          - key: disabled
+            title: Disabled
+            type: boolean
+          - key: privacyEnhanced
+            title: Privacy Enhanced
+            type: boolean
+
+
+

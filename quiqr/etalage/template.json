@@ -1,0 +1,9 @@
+{
+  "name": "Paper",
+  "description": "The famous paper theme with a Quiqr CMS layer",
+  "homepage": "https://github.com/mipmip/quiqr-paper-themed-template",
+  "license": "MIT",
+  "licenseURL": "https://github.com/mipmip/quiqr-paper-themed-template/blob/main/LICENSE",
+  "author": " Steve Francia, Nanxiaobei and Pim Snel",
+  "authorHomepage": ""
+}

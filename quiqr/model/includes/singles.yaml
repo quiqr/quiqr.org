@@ -1,0 +1,19 @@
+- key: images
+  description: global images
+  _mergePartial: https://raw.githubusercontent.com/quiqr/model-partials/main/singles/global-images.yml
+
+- key: etalage
+  _mergePartial: etalage
+
+- key: readme
+  _mergePartial: readme
+
+- key: frontpage
+  _mergePartial: frontpage
+
+- key: dashboard
+  _mergePartial: dashboard
+
+- key: mainConfig
+  _mergePartial: config
+

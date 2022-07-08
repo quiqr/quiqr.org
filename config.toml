@@ -1,0 +1,94 @@
+baseURL = "/"
+author = "Pim Snel"
+copyright = "Copyright © 2021, Quiqr.org"
+paginate = 3.0
+languageCode = "en"
+DefaultContentLanguage = "en"
+enableInlineShortcodes = true
+ignoreErrors = [
+  "error-remote-getjson"
+]
+theme = "Paper"
+title = "Quiqr"
+
+[params]
+twitter = "quiqrapp"
+github = "quiqr"
+instagram = ""
+
+[markup]
+
+  [markup.goldmark]
+
+    [markup.goldmark.renderer]
+    unsafe = true
+
+[menu]
+
+  [[menu.main]]
+  identifier = "hugoconf"
+  name = "Hugo Conf 2022"
+  url = "/page/hugoconf/"
+  weight = 10.0
+
+  [[menu.main]]
+  identifier = "download"
+  name = "Download"
+  url = "/page/download"
+  weight = 0.0
+
+  [[menu.main]]
+  identifier = "documentation"
+  name = "Documentation"
+  url = "https://book.quiqr.org/"
+  weight = 0.0
+
+  [[menu.main]]
+  identifier = "templates"
+  name = "Templates"
+  url = "/page/templates"
+  weight = 0.0
+
+  [[menu.main]]
+  identifier = "community"
+  name = "Community"
+  url = "/page/community"
+  weight = 0.0
+
+  [[menu.main]]
+  identifier = "screenshots"
+  name = "Screenshots"
+  url = "/page/screenshots"
+  weight = 0.0
+
+[taxonomies]
+category = "categories"
+tag = "tags"
+series = "series"
+
+[privacy]
+
+  [privacy.vimeo]
+  disabled = false
+  simple = true
+
+  [privacy.twitter]
+  disabled = false
+  enableDNT = true
+  simple = true
+
+  [privacy.instagram]
+  disabled = false
+  simple = true
+
+  [privacy.youtube]
+  disabled = false
+  privacyEnhanced = true
+
+[services]
+
+  [services.instagram]
+  disableInlineCSS = true
+
+  [services.twitter]
+  disableInlineCSS = true
