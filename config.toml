@@ -46,7 +46,7 @@ instagram = ""
   [[menu.main]]
   identifier = "templates"
   name = "Templates"
-  url = "/page/templates"
+  url = "https://github.com/quiqr/quiqr-community-templates"
   weight = 0.0
 
   [[menu.main]]
