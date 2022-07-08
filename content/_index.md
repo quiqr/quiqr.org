@@ -12,6 +12,7 @@ We do not have a fancy website yet, but we have a lot to share so read on ..
 
 With Quiqr you can **build,** **share**, **maintain** and publish **websites.**
 
+Quiqr is a fork of [Hokus CMS](https://www.hokuscms.com/). Without this brilliant work we couldn't be where we are.
 
 ## It looks like this...
 
