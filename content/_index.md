@@ -1,11 +1,3 @@
-# hello Hugo Conf, hello World! 
-
-This is the **Quiqr Project** and the project is now [live](/page/hugoconf)! 🎉
-
-We do not have a fancy website yet, but we have a lot to share so read on ..
-
-{{<figure src="/images/sneller.png" width="75" >}}
-
 ## What is Quiqr?
 
 > Quiqr is a hackable, open source, cross platform, Hugo specialized, offline desktop CMS application with build in Git functionality for deploying static sites to any hosting server.
