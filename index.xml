@@ -2,12 +2,12 @@
 The slides of Pim&amp;rsquo;s Lightning Talk are available for reading back and you can download these slides as a Quiqr Template too.</description></item><item><title>Community</title><link>/page/community/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/community/</guid><description>Quiqr is an open source project and we strive to form a healty, open and inspiring community. To everyone who likes to give a positive contribution&amp;hellip; feel welcome!
 We are organized on GitHub and currently our main projects are&amp;hellip;
 Quiqr Desktop - The Quiqr Desktop Application project. Quiqr Community Templates - Community driven list of Quiqr Site templates. The Quiqr Book - The Quiqr documentation project for both users and developers.</description></item><item><title>Download</title><link>/page/download/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/download/</guid><description>Quiqr is available for Mac, Windows and Linux. Here are the latest installers.
-Quiqr for Mac Open the disk image and copy the Quiqr app to your Applications folder.
-Quiqr for Windows After download execute the .exe-file to install Quiqr.
-Quiqr for Linux Quiqr for Linux AppImage
-Quiqr for Linux Deb
-Quiqr for Linux RPM
-You can also find Quiqr in Snapcraft Store.</description></item><item><title>hugoconf</title><link>/page/hugoconf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/hugoconf/</guid><description>Quiqr went public at the Hugo Conf 2022. We want to thanks the people of the HugoConf for giving us time and space to promote our project.
+Quiqr for macOS Quiqr Desktop for macOS v0.17.6
+Open the disk image and copy the Quiqr app to your Applications folder.
+Quiqr for Windows Quiqr Desktop for Windows v0.17.6
+After download execute the .exe-file to install Quiqr.
+Quiqr for Linux Quiqr Desktop for Linux as AppImage v017.6
+Older versions All earlier versions and binaries for other platforms are located on GitHub</description></item><item><title>hugoconf</title><link>/page/hugoconf/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/hugoconf/</guid><description>Quiqr went public at the Hugo Conf 2022. We want to thanks the people of the HugoConf for giving us time and space to promote our project.
 The slides of Pim&amp;rsquo;s Lightning Talk are available for reading back and you can download these slides as a Quiqr Template too.</description></item><item><title>Screenshots</title><link>/page/screenshots/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>/page/screenshots/</guid><description>Quiqr looks like this&amp;hellip; ready to use templates
 import Quiqr templates or Hugo Themes
 powerful CMS
