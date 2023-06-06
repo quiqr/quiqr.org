@@ -46,8 +46,3 @@ We hope you try and like Quiqr. Now we're public, our next goal is to create a h
 ...send us [bug reports](https://github.com/quiqr/quiqr-desktop/issues), pull requests, publish a [community template](https://github.com/quiqr/quiqr-community-templates), improve the [Quiqr documentation](https://book.quiqr.org/), help us with translations, help us creating better interfaces... help us... help up...
 
 Contributions are super welcome 😍
-
-
-
-
-
