@@ -1,3 +1,5 @@
+_Quiqr... a Home Made CMS_
+
 ## What is Quiqr?
 
 > Quiqr is a hackable, open source, cross platform, Hugo specialized, offline desktop CMS application with build in Git functionality for deploying static sites to any hosting server.
