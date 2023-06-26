@@ -1,0 +1,5 @@
+customHeaders:
+  - pattern: '**'
+    headers:
+      - key: access-control-allow-origin
+        value: '*'
