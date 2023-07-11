@@ -10,6 +10,6 @@ function getURL() {
   }
 }
 
-addEventListener("load", function(){
-  getURL();
-});
+//addEventListener("load", function(){
+//  getURL();
+//});
