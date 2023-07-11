@@ -8,7 +8,7 @@ content_blocks:
     testimonial_item: []
     button:
       enable: true
-      label: Download Quiqr
+      label: Download (Windows, Mac or Linux)
       link: /pages/download
     resources: []
     bg_image: import-hugo-themes.png
@@ -77,7 +77,7 @@ content_blocks:
     testimonial_item: []
     button:
       enable: true
-      label: Download Quiqr
+      label: Download (Windows, Mac or Linux)
       link: /pages/download
     resources: []
     bg_image: seed_714337_00000.png
@@ -119,6 +119,8 @@ mainContentInfo: ''
 draft: false
 
 ---
+
+
 
 
 

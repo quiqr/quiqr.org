@@ -118,18 +118,12 @@ params:
         disabled: true
         submenus: []
       - name: Community
-        submenus:
-          - name: GitHub Project
-            url: https://github.com/quiqr
-            disabled: false
-          - name: Forum
-            url: https://github.com/quiqr/quiqr-desktop/discussions
-            disabled: false
-        url: ''
-        disabled: true
+        submenus: []
+        url: /pages/community
+        disabled: false
       - name: GitHub
         url: https://github.com/quiqr/quiqr-desktop
-        disabled: false
+        disabled: true
         submenus: []
       - name: forum
         url: https://github.com/quiqr/quiqr-desktop/discussions
@@ -137,6 +131,10 @@ params:
         submenus: []
       - name: Blog
         url: /blog
+        disabled: false
+        submenus: []
+      - name: about
+        url: /pages/about
         disabled: false
         submenus: []
     footer: []

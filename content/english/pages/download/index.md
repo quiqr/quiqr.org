@@ -92,4 +92,6 @@ mainContentInfo: ''
 
 ### Download Quiqr
 
-Quiqr is available for Mac, Windows and Linux. Here are the latest installers.
+Quiqr is available for Mac, Windows and Linux. Here are the latest installers. 
+
+<span style="font-size:80%">Download [older versions and installers for other platforms on GitHub](https://github.com/quiqr/quiqr-desktop/releases).</span>
