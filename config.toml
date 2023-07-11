@@ -11,6 +11,9 @@ ignoreErrors = [
 theme = "Paper"
 title = "Quiqr"
 
+
+
+
 [params]
 twitter = "quiqrapp"
 github = "quiqr"
