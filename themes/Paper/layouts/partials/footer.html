@@ -10,8 +10,9 @@
   function setLatestVersion(url, id, linktext, href_postfix){
 
     var element = document.getElementById(id);
+    var stamp = Date.now();
     if(element){
-      fetch(url)
+      fetch(url+"?stamp="+stamp)
         .then(res => res.text())
         .then(text => {
           const version = text.split('\n')[0].split(": ")[1];
