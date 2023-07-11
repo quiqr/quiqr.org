@@ -1,0 +1,18 @@
+---
+
+title: Team One
+fields:
+  - key: enable
+    title: Enable
+    type: boolean
+
+  - key: title
+    type: string
+
+  - key: page_name
+    title: Name
+    arrayTitle: true
+    type: select-from-query
+    query_glob: content/english/team/*/index.md
+    query_string: "#parent_dir[]"
+

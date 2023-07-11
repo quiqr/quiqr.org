@@ -1,1 +1,2 @@
-# Paper for Quiqr
+# README FOR QUIQR HOME
+

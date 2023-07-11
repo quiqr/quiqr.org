@@ -1,0 +1,46 @@
+<section class="section bg-gray position-relative">
+  <div class="container position-relative zindex-1">
+    <div class="row">
+
+      {{ with .context.one }}
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h3><span class="text-primary">{{.number}}</span> {{ .title }}</h3>
+        <p>{{ .content | markdownify }}</p>
+        <ul class="list-styled style-circle">
+          {{ range .bullet_point }}
+          <li class="mb-3">{{ .content | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+     {{end}}
+
+     {{ with .context.two }}
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h3><span class="text-primary">{{.number}}</span> {{ .title }}</h3>
+        <p>{{ .content | markdownify }}</p>
+        <ul class="list-styled style-circle">
+          {{ range .bullet_point }}
+          <li class="mb-3">{{ .content | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+     {{end}}
+
+      {{ with .context.three }}
+      <div class="col-md-4 mb-4 mb-md-0">
+        <h3><span class="text-primary">{{.number}}</span> {{ .title }}</h3>
+        <p>{{ .content | markdownify }}</p>
+        <ul class="list-styled style-circle">
+          {{ range .bullet_point }}
+          <li class="mb-3">{{ .content | markdownify }}</li>
+          {{ end }}
+        </ul>
+      </div>
+     {{end}}
+
+    </div>
+  </div>
+  <!-- background shapes -->
+  <img loading="lazy" class="img-fluid philosophy-bg-shape" src="{{ `images/backgrounds/about-page-bg.webp` | relURL }}" onerror="this.onerror=null;this.src='{{ `images/backgrounds/about-page-bg.png` | relURL }}'" alt="shape">
+  <img loading="lazy" class="img-fluid about-bg-shape" src="{{ `images/backgrounds/about-us-3-bg.webp` | relURL }}" onerror="this.onerror=null;this.src='{{ `images/backgrounds/about-us-3-bg.png` | relURL }}'" alt="shape">
+</section>

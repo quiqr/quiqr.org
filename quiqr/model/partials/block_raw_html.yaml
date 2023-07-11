@@ -1,0 +1,11 @@
+---
+title: Raw HTML
+fields:
+
+  - key: title
+    type: string
+
+  - key: html
+    title: HTML
+    type: string
+    multiLine: true

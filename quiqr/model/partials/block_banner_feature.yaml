@@ -1,0 +1,21 @@
+---
+title: Banner Feature
+fields:
+  - key: feature_item
+    title: Feature Items
+    type: accordion
+    fields:
+      - arrayTitle: true
+        key: title
+        name: Title
+        type: string
+      - key: content
+        title: Content
+        type: string
+        multiLine: true
+      - key: icon
+        type: select-from-query
+        multiple: false
+        query_glob: data/font-awesome.json
+        query_string: .icons[]
+

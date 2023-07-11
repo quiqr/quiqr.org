@@ -1,0 +1,43 @@
+id: contactForm
+form_fields:
+  - label: Name
+    name: Name
+    required: false
+    form_field_type: Text
+  - label: Email
+    name: Email
+    required: false
+    form_field_type: Text
+  - label: Phone
+    name: Phone
+    required: false
+    form_field_type: Text
+  - label: Subject
+    name: Subject
+    required: false
+    form_field_type: Text
+  - label: Your Message
+    name: Message
+    required: false
+    form_field_type: Textarea
+submit_text: SEND MESSAGE
+post_action: /pages/todo
+contentLeft:
+  - content_type: BX Raw HTML
+    enable: true
+    page_name: bas-anneveld
+    title: ''
+    html: >-
+      <h3>Ready to Get Started?</h3>
+
+      <h4>Contact Our Experts Today</h4>
+
+      <img style="padding:10px;" class="img-fluid"
+      src="/images/paragraph/map2.png"/>
+content_type: block_team_one
+content_blocks_below_main:
+  - id: ''
+    content_type: block_team_one
+    page_name: mandy
+    title: Mandy
+    enable: true

@@ -1,0 +1,69 @@
+key: dynimage
+title: About product
+fields:
+
+  - key: subtitle
+    title: Subtitle
+    type: string
+
+  - key: title
+    title: Title
+    type: string
+
+  - key: content
+    title: Content
+    type: markdown
+    multiLine: true
+
+  - key: button
+    groupdata: true
+    title: Button
+    type: nest
+    fields:
+      - key: enable
+        title: Enable
+        type: boolean
+      - key: label
+        title: Label
+        type: string
+      - key: link
+        title: Link
+        type: string
+
+  - key: bg_image
+    title: Background Image
+    type: image-select
+    path: "/static/images/backgrounds"
+    buttonTitle: Select Background Image
+
+  - key: image
+    title: Image
+    type: image-select
+    path: "/static/images/paragraph"
+    buttonTitle: Select Image
+
+  - key: style
+    title: Style
+    type: select
+    arrayTitle: true
+    options:
+    - ImageLeft
+    - ImageRight
+
+  - key: feature_item
+    title: Feature Items
+    type: accordion
+    fields:
+      - arrayTitle: true
+        key: title
+        name: Title
+        type: string
+      - key: content
+        title: Content
+        type: string
+        multiLine: true
+      - key: icon
+        type: select-from-query
+        multiple: false
+        query_glob: data/font-awesome.json
+        query_string: .icons[]

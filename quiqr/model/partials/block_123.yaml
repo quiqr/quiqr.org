@@ -1,0 +1,60 @@
+---
+
+title: 123
+fields:
+
+  - key: one
+    groupdata: true
+    type: nest
+    fields:
+      - key: number
+        type: string
+      - key: title
+        type: string
+      - key: content
+        type: string
+        multiLine: true
+      - key: bullet_point
+        type: accordion
+        fields:
+          - key: content
+            type: string
+            arrayTitle: true
+
+  - key: two
+    groupdata: true
+    type: nest
+    fields:
+      - key: number
+        type: string
+      - key: title
+        type: string
+      - key: content
+        type: string
+        multiLine: true
+      - key: bullet_point
+        type: accordion
+        fields:
+          - key: content
+            type: string
+            arrayTitle: true
+
+  - key: three
+    groupdata: true
+    type: nest
+    fields:
+      - key: number
+        type: string
+      - key: title
+        type: string
+      - key: content
+        type: string
+        multiLine: true
+      - key: bullet_point
+        type: accordion
+        fields:
+          - key: content
+            type: string
+            arrayTitle: true
+
+

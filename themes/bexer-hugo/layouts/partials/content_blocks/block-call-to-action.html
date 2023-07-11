@@ -1,0 +1,19 @@
+{{ with .context }}
+{{ "<!-- call to action -->" | safeHTML }}
+<section class="section overlay-secondary bg-fixed" style="background-image: url(/images/backgrounds/{{ .bg_image }});">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-7 col-md-10 col-11 text-center mx-auto">
+        <h2 class="section-title text-white">{{ .title | markdownify }}</h2>
+        {{ if .button.enable }}
+        {{ with .button }}
+        <a href="{{ .link | absLangURL }}" class="btn btn-primary hover-ripple">{{ .label }}</a>
+        {{ end }}
+        {{ end }}
+      </div>
+    </div>
+  </div>
+</section>
+{{ "<!-- /call to action -->" | safeHTML }}
+{{ end }}
+

@@ -1,0 +1,63 @@
+{{ $message := .context.message }}
+{{ $person_name := .context.person_name }}
+{{ $send_button := .context.send_button }}
+
+<section class="section">
+  <div class="container">
+    <div class="row">
+
+      <div class="col-md-5 mb-5 mb-md-0">
+        <div>
+
+          {{ with site.GetPage (printf "%s%s" "/team/" $person_name) }}
+            <section class="section pt-0 ">
+              <div class="container">
+                <div class="row">
+                  <div class="col-12">
+                    <div class="section-title-border"></div>
+                    <h4 class="section-title">{{$message}}</h4>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-8">
+                    {{ .Render "team-card" }}
+                  </div>
+                </div>
+
+
+            </section>
+          {{ end}}
+              </div>
+        </div>
+
+        <div class="col-md-7">
+          {{ with index .contextSite.Data.forms .context.formid }}
+            <form action="{{ .post_action }}" method="POST" class="row">
+
+              {{ range .form_fields }}
+
+              {{ if not .disabled }}
+              {{end}}
+
+              {{ $partialPath := printf "form_inputs/%s.html" (lower (replace .form_field_type " " "-")) }}
+              {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+
+              {{ partial (print "form_inputs/" (lower (replace .form_field_type " " "-"))) (dict "context" . "contextSite" $.Site )}}
+
+            {{ else }}
+              <h1 style="color: red">ERROR: PARTIAL FILE DOES NOT EXIST:{{ $partialPath }}</h1>
+            {{ end }}
+            </label>
+          {{ end }}
+          <div class="col-12">
+            <button type="submit" value="send" class="btn btn-primary hover-ripple">{{ $send_button }}</button>
+          </div>
+            </form>
+          {{ end }}
+        </div>
+      </div>
+    </div>
+</section>
+{{ "<!-- /contact form and map -->" | safeHTML }}
+

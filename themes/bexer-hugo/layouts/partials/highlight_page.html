@@ -1,0 +1,20 @@
+<div class="card border-0 rounded-0 box-shadow">
+  {{ $Image := fileExists (add `static/images/paragraph/` (string (.image))) }}
+  {{ if $Image }}
+  <img loading="lazy" class="card-img-top rounded-0" src="/images/paragraph/{{ .image }}"
+    style="
+             object-fit: cover;
+             object-position: center;
+             min-height: 217px;
+             max-height: 217px;
+             "
+
+  alt="{{ .title }}">
+  {{ end }}
+  <div class="card-body position-relative">
+    <!--{{ with .icon}}<div class="card-icon {{if not $Image}}position-static mb-4{{end}}"><i class="{{. }}"></i></div>{{ end }}-->
+      <h4 class="card-title"><a class="text-dark" href="{{ .relative_link }}">{{ .title }}</a></h4>
+    <p class="card-text">{{ .markdown_text }}</p>
+    <a href="{{ .relative_link }}" class="btn btn-secondary btn-arrow" aria-label="{{ .title }}">{{ i18n "read_more" }}</a>
+  </div>
+</div>

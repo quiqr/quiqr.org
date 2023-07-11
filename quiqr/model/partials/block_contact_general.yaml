@@ -1,0 +1,21 @@
+---
+
+title: Form
+fields:
+
+  - key: message
+    title: Call to action message
+    type: string
+
+  - key: image
+    title: Image
+    type: image-select
+    path: /static/images/contact_forms
+    buttonTitle: Select Image
+
+  - key: formid
+    title: Form ID
+    arrayTitle: true
+    type: select-from-query
+    query_glob: data/forms/*.yaml
+    query_string: "#file_base_name[]"

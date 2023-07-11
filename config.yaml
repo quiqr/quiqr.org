@@ -1,0 +1,143 @@
+baseURL: https://technative.eu/
+title: Quiqr
+theme:
+  - bexer-hugo
+  - hugo-debugprint
+paginate: '6'
+summaryLength: '10'
+googleAnalytics: ''
+disableLanguages: []
+outputs:
+  home:
+    - HTML
+    - RSS
+    - JSON
+    - WebAppManifest
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+mediaTypes:
+  application/manifest+json:
+    suffixes:
+      - webmanifest
+  text/netlify:
+    delimiter: ''
+    suffixes:
+      - ''
+outputFormats:
+  WebAppManifest:
+    mediaType: application/manifest+json
+    rel: manifest
+languages:
+  en:
+    menu:
+      main: null
+    languageName: En
+    languageCode: en-us
+    contentDir: content/english
+    weight: 1
+    home: home
+    copyright: © 2023 - Quiqr
+    footer_content: '**With Quiqr you can build, share, maintain and publish websites.**'
+params:
+  debugprint: true
+  logo: logo-nav.svg
+  logo_width: 200px
+  logo_footer: logo-nav.svg
+  favicon: 02_QUIQR-icon-logo.png
+  top_header: false
+  description: >-
+    Quiqr is a local first Hugo CMS with built in Git functionality. Quiqr is
+    available for macOS, Windows and Linux.
+  author: Themefisher
+  contact_form_action: '#'
+  google_analitycs_id: ''
+  address: ''
+  mobile: ''
+  email: info@quiqr.org
+  quick_contact: false
+  search: false
+  mainSections:
+    - blog
+    - service
+    - project
+  preloader:
+    enable: false
+    preloader: ''
+  navigation_button:
+    enable: true
+    label: download now
+    link: /pages/download/
+  subscription:
+    enable: false
+    mailchimp_form_action: >-
+      https://gmail.us4.list-manage.com/subscribe/post?u=463ee871f45d2d93748e77cad&amp;id=a0a2c6d074
+    mailchimp_form_name: b_463ee871f45d2d93748e77cad_a0a2c6d074
+  gmap:
+    enable: true
+    gmap_api: AIzaSyCcABaamniA6OL5YvYSpB3pFMNrXwXnLwU
+    map_latitude: '51.5223477'
+    map_longitude: '-0.1622023'
+    map_marker: images/marker.png
+    map_marker_name: marker.png
+    resources: []
+  social:
+    - icon: fab fa-twitter
+      link: https://twitter.com/quiqrapp
+    - icon: fab fa-github
+      link: https://github.com/quiqr
+  resources: []
+  menus_alt:
+    main:
+      - name: Why Quiqr
+        url: ''
+        submenus:
+          - name: Local First
+            url: /pages/localfirst
+            disabled: false
+          - name: Made for Hugo
+            url: /pages/made_for_hugo
+            disabled: false
+          - name: Secure by design
+            url: /pages/secure_by_design
+            disabled: false
+          - name: Free forever
+            url: /pages/free_forever
+            disabled: false
+          - name: Blazingly Fast
+            url: /pages/fast
+            disabled: false
+        disabled: true
+      - name: Documentation
+        url: https://book.quiqr.org
+        disabled: false
+        submenus: []
+      - name: Template Gallery
+        url: /pages/templates/
+        disabled: true
+        submenus: []
+      - name: Community
+        submenus:
+          - name: GitHub Project
+            url: https://github.com/quiqr
+            disabled: false
+          - name: Forum
+            url: https://github.com/quiqr/quiqr-desktop/discussions
+            disabled: false
+        url: ''
+        disabled: true
+      - name: GitHub
+        url: https://github.com/quiqr/quiqr-desktop
+        disabled: false
+        submenus: []
+      - name: forum
+        url: https://github.com/quiqr/quiqr-desktop/discussions
+        disabled: false
+        submenus: []
+      - name: Blog
+        url: /blog
+        disabled: false
+        submenus: []
+    footer: []
+  top_menu_vertical_margin: '8'

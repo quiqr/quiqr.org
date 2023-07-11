@@ -1,0 +1,18 @@
+<section class="section bg-cover overlay" style="background-image: url('/images/backgrounds/{{ .context.bg_image  }}');">
+  <img class="d-none" src="/images/backgrounds/{{ .context.bg_image  }}">
+
+  <div class="container">
+    <div class="row">
+      <div class="col-12">
+        <h2 class="text-white mb-3">{{ .contextPage.Title }}</h2>
+        {{ "<!-- breadcrumb -->" | safeHTML }}
+        <nav aria-label="breadcrumb">
+          <ol class="breadcrumb bg-transparent p-0">
+            <li class="breadcrumb-item font-weight-semebold"><a class="text-white" href="{{ .contextSite.BaseURL | relLangURL }}">home</a></li>
+            <li class="breadcrumb-item font-weight-semebold active text-primary" aria-current="page">{{ .contextPage.Title }}</li>
+          </ol>
+        </nav>
+      </div>
+    </div>
+  </div>
+</section>

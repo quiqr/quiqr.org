@@ -1,0 +1,74 @@
+---
+key: menus_alt
+title: Menus
+hidePreviewIcon: true
+fields:
+  - key: params
+    type: pull
+    fields:
+      - key: menus_alt
+        type: pull
+        fields:
+
+          - key: main
+            title: Main
+            type: accordion
+            fields:
+              - arrayTitle: true
+                key: name
+                title: Name
+                type: string
+              - key: url
+                title: Url
+                type: string
+              - key: disabled
+                type: boolean
+
+              - key: submenus
+                title: Submenu's
+                type: accordion
+                fields:
+                  - arrayTitle: true
+                    key: name
+                    title: Name
+                    type: string
+                  - key: url
+                    title: Url
+                    type: string
+                  - key: disabled
+                    type: boolean
+
+          - key: footer
+            title: Footer
+            type: accordion
+            fields:
+              - arrayTitle: true
+                key: name
+                title: Name
+                type: string
+              - key: url
+                title: Url
+                type: string
+
+      - key: navigation_button
+        type: nest
+        groupdata: true
+        fields:
+          - key: enable
+            type: boolean
+          - key: label
+            type: string
+          - key: link
+            type: string
+
+      - key: social
+        type: accordion
+        fields:
+
+        - key: icon
+          type: string
+          arrayTitle: true
+
+        - key: link
+          type: string
+

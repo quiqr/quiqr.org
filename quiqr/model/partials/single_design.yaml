@@ -1,0 +1,35 @@
+---
+file: data/design.json
+hidePreviewIcon: true
+title: Design
+fields:
+  - key: "primary_font"
+    title: "Main Text Font"
+    type: "font-picker"
+    tip: "choose your font"
+    limit: 50
+    categories:
+      - sans-serif
+
+  - key: "headings_font"
+    title: "Headings Font"
+    type: "font-picker"
+    tip: "choose your font"
+    limit: 300
+
+  - key: primary_color
+    type: color
+    autosave: true
+
+  - key: primary_color_darker
+    type: color
+    autosave: true
+
+  - key: secondary_color
+    type: color
+    autosave: true
+
+  - key: secondary_color_darker
+    type: color
+    autosave: true
+

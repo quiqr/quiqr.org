@@ -1,0 +1,6 @@
+node_modules
+# hallo
+   # dasdasddf
+
+node_modules
+.quiqr-data

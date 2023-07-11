@@ -1,0 +1,19 @@
+key: dynbxservicelist
+fields:
+
+  - key: subtitle
+    title: Subtitle
+    type: string
+
+  - key: title
+    title: Title
+    type: string
+
+  - key: numitems
+    title: Number of news items
+    type: number
+
+  - key: service_type
+    title: Service Type
+    type: string
+

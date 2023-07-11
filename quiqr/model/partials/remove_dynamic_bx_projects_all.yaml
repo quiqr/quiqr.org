@@ -1,0 +1,8 @@
+---
+
+title: Projects All
+content_type: BX Projects All
+fields:
+  - key: enable
+    title: Enable
+    type: boolean

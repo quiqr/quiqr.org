@@ -1,0 +1,35 @@
+fields:
+  - key: bg_image
+    title: Background Image
+    type: image-select
+    path: /static/images/backgrounds
+    buttonTitle: Select Background Image
+
+  - key: title
+    title: Title
+    type: string
+
+  - key: jobTitle
+    title: Job title
+    type: string
+
+  - key: jobType
+    title: Job type
+    type: select
+    options:
+      - Full-time
+      - Part-time
+
+  - key: location
+    type: string
+
+  - key: description
+    title: Description
+    type: string
+    multiLine: true
+
+  - key: mainContent
+    title: Content
+    type: markdown
+
+

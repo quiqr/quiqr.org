@@ -1,0 +1,19 @@
+---
+
+title: Form
+fields:
+
+#  - key: title
+#    title: Title
+#    type: string
+
+#  - key: formid
+#    title: Form ID
+#    type: string
+
+  - key: formid
+    title: Form ID
+    arrayTitle: true
+    type: select-from-query
+    query_glob: data/forms/*.yaml
+    query_string: "#file_base_name[]"

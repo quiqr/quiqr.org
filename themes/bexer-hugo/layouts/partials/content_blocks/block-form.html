@@ -1,0 +1,62 @@
+{{ $Title := .context.title }}
+{{ if isset .context "formid" }}
+
+{{ with index .contextSite.Data.forms .context.formid }}
+
+  {{ "<!-- contact form and map -->" | safeHTML }}
+  <section class="section">
+    <div class="container">
+      <div class="row">
+
+        {{ with .contentLeft }}
+        <div class="col-md-5 mb-5 mb-md-0">
+          <div>
+
+        {{ range . }}
+          {{ $partialPath := printf "content_blocks/%s.html" (lower (replace .content_type "_" "-")) }}
+          {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+            {{ if not .disabled }}
+              <a id="{{.id}}" class="hiddena" ></a>
+              {{ partial (print "content_blocks/" (lower (replace .content_type "_" "-"))) (dict "context" . "contextSite" $.Site "contextPage" $.Page )}}
+            {{ end }}
+          {{ else }}
+            <h5 style="color: red">ERROR: PARTIAL FILE DOES NOT EXIST:{{ $partialPath }}</h5>
+          {{ end }}
+        {{ end }}
+          </div>
+        </div>
+
+
+        {{ end }}
+
+        <div class="col-md-7">
+          <h3 class="section-title">{{ $Title }}</h3>
+          <form action="{{ .post_action }}" method="POST" class="row">
+
+            {{ range .form_fields }}
+
+              {{ if not .disabled }}
+                {{end}}
+
+                {{ $partialPath := printf "form_inputs/%s.html" (lower (replace .form_field_type " " "-")) }}
+                {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+
+                  {{ partial (print "form_inputs/" (lower (replace .form_field_type " " "-"))) (dict "context" . "contextSite" $.Site )}}
+
+                {{ else }}
+                <h1 style="color: red">ERROR: PARTIAL FILE DOES NOT EXIST:{{ $partialPath }}</h1>
+                {{ end }}
+              </label>
+            {{ end }}
+            <div class="col-12">
+              <button type="submit" value="send" class="btn btn-primary hover-ripple">{{ .submit_text }}</button>
+            </div>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+  {{ "<!-- /contact form and map -->" | safeHTML }}
+
+{{ end }}
+{{ end }}
