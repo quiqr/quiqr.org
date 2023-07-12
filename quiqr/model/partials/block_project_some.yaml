@@ -1,0 +1,19 @@
+---
+
+title: Projects Some
+fields:
+
+  - key: subtitle
+    type: string
+
+  - key: title
+    type: string
+
+  - key: project_item
+    title: Project Items
+    type: accordion
+    fields:
+      - arrayTitle: true
+        key: page_name
+        title: name
+        type: string

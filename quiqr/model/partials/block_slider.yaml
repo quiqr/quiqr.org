@@ -1,0 +1,59 @@
+---
+
+title: Slider
+fields:
+
+  - key: slider_item
+    title: Slider Items
+    type: accordion
+    fields:
+      - arrayTitle: true
+        key: title
+        title: Title
+        type: string
+      - key: subtitle
+        type: string
+      - key: content
+        title: Content
+        type: string
+        multiLine: true
+      - key: txt_color
+        type: string
+        title: TODO TXT COLOR
+      - key: animation
+        type: select
+        multiple: false
+        options:
+          - fadeInUp
+          - fadeInDown
+          - fadeInLeft
+          - fadeInRight
+          - zoomIn
+      - key: bg_image
+        type: image-select
+        path: /static/images/slider
+        title: Logo Footer
+        buttonTitle: select bg image
+      - key: button
+        type: nest
+        groupdata: true
+        fields:
+          - key: enable
+            title: Enable
+            type: boolean
+          - key: label
+            title: Label
+            type: string
+          - key: link
+            title: Link
+            type: string
+          - key: animation
+            type: select
+            multiple: false
+            options:
+              - fadeInUp
+              - fadeInDown
+              - fadeInLeft
+              - fadeInRight
+              - zoomIn
+

@@ -1,0 +1,167 @@
+---
+key: params
+hidePreviewIcon: true
+title: Params
+fields:
+
+  - key: title
+    type: string
+
+  - key: languages
+    group: languages
+    title: Footer Text
+    type: pull
+    fields:
+
+      - key: en
+        group: en
+        type: pull
+        fields:
+
+          - key: languageName
+            type: hidden
+            default: En
+          - key: languageCode
+            type: hidden
+            default: en-us
+          - key: contentDir
+            type: hidden
+            default: content/english
+          - key: home
+            type: hidden
+            default: home
+          - key: copyright
+            type: string
+          - key: footer_content
+            type: string
+            multiLine: true
+
+  - key: params
+    group: params
+    type: pull
+    fields:
+      - key: description
+        type: string
+
+      - key: logo
+        type: nest
+        groupdata: false
+        fields:
+
+        - key: logo
+          title: Logo Head
+          type: image-select
+          path: /static/images/logo
+          buttonTitle: select logo image
+          tip: select image for logo
+
+        - key: logo_width
+          type: string
+
+        - key: logo_footer
+          title: Logo Footer
+          type: image-select
+          path: /static/images/logo
+          buttonTitle: select logo image
+          tip: select image for logo footer
+
+        - key: top_menu_vertical_margin
+          type: string
+          tip: set this to a negative or positive integer to adjust the alignment of the top navigation menu.
+
+
+        - key: favicon
+          type: image-select
+          path: /static/images/logo
+          buttonTitle: select favicon image
+          tip: select image for favicon
+
+      - key: advanged_theme_features
+        type: nest
+        groupdata: false
+        fields:
+
+          - key: search
+            type: boolean
+
+          - key: top_header
+            type: boolean
+
+          - key: quick_contact
+            type: boolean
+
+          - key: contact_form_action
+            type: string
+
+          - key: subscription
+            type: nest
+            fields:
+              - key: enable
+                type: boolean
+              - key: mailchimp_form_action
+                type: string
+              - key: mailchimp_form_name
+                type: string
+
+          - key: main-sec
+            type: nest
+            groupdata: false
+            fields:
+            - key: mainSections
+              type: leaf-array
+              field:
+                key: mainSections
+                type: string
+
+          - key: gmap
+            type: nest
+            groupdata: true
+            fields:
+
+              - key: enable
+                type: boolean
+              - key: gmap_api
+                type: string
+              - key: map_latitude
+                type: string
+              - key: map_longitude
+                type: string
+              - key: map_marker
+                type: string
+              - key: map_marker_name
+                type: image-select
+                path: /static/images/logo
+                buttonTitle: select marker image
+
+          - key: google_analitycs_id
+            type: string
+
+      - key: address
+        type: nest
+        groupdata: false
+        fields:
+
+          - key: email
+            type: string
+
+          - key: mobile
+            type: string
+
+          - key: address
+            type: string
+
+
+  - key: text_features
+    type: nest
+    groupdata: false
+    fields:
+    - key: paginate
+      type: number
+
+    - key: summaryLength
+      type: number
+
+  - key: googleAnalytics
+    title: Google Analitycs Id
+    type: string
+

@@ -1,0 +1,23 @@
+{{ "<!-- banner feature -->" | safeHTML }}
+<section class="banner-feature-wrapper">
+  <div class="container">
+    <div class="row justify-content-center">
+      {{ range .context.feature_item }}
+      {{ "<!-- feature item -->" | safeHTML }}
+      <div class="col-lg-3 col-sm-6 mb-4 mb-lg-0">
+        <div class="bg-white py-5 px-4 text-center box-shadow banner-feature">
+          {{ with .icon }}
+          <div class="icon-bg mb-4 water-wave">
+            <i class="fas {{ . }} icon text-primary"></i>
+          </div>
+          {{ end }}
+          <h4 class="mb-4">{{ .title | markdownify }}</h4>
+          <p>{{ .content | markdownify }}</p>
+        </div>
+      </div>
+      {{ end }}
+    </div>
+  </div>
+</section>
+{{ "<!-- /banner feature -->" | safeHTML }}
+

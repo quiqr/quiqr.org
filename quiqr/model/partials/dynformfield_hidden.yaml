@@ -1,0 +1,10 @@
+key: dynffhidden
+form_field_type: Hidden
+fields:
+  - key: value
+    title: value
+    type: string
+
+
+
+

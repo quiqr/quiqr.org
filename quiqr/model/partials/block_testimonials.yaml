@@ -1,0 +1,41 @@
+---
+
+title: Testimonials
+fields:
+
+  - key: subtitle
+    title: Subtitle
+    type: string
+
+  - key: title
+    title: Title
+    type: string
+
+  - key: testimonial_item
+    title: Testimonial Items
+    type: accordion
+    fields:
+      - key: testimonial_id
+        title: Name
+        arrayTitle: true
+        type: select-from-query
+        query_glob: data/testimonials/*.yaml
+        query_string: "#file_base_name[]"
+
+          #      - arrayTitle: true
+          #        key: name
+          #        type: string
+          #
+          #      - key: designation
+          #        type: string
+          #
+          #      - key: content
+          #        title: Content
+          #        type: string
+          #        multiLine: true
+          #
+          #      - key: client_image
+          #        type: image-select
+          #        path: /static/images/testimonial
+          #        title: Client Image
+          #        buttonTitle: select image

@@ -1,0 +1,82 @@
+---
+hidePreviewIcon: true
+key: languages
+title: Menus
+fields:
+
+  - key: languages
+    group: languages
+    type: pull
+    fields:
+
+      - key: en
+        group: en
+        type: pull
+        fields:
+
+          - key: menu
+            title: Menu
+            type: section
+            groupdata: true
+            fields:
+
+              - key: main
+                title: Main
+                type: accordion
+                fields:
+                  - key: identifier
+                    title: Identifier
+                    type: string
+                    arrayTitle: true
+                  - key: name
+                    title: Name
+                    type: string
+                  - key: parent
+                    title: Parent
+                    type: string
+                  - key: url
+                    title: Url
+                    type: string
+                  - key: hasChildren
+                    type: boolean
+                  - key: weight
+                    title: Weight
+                    type: number
+
+              - key: footer
+                title: Footer
+                type: accordion
+                fields:
+                  - key: identifier
+                    title: Identifier
+                    type: string
+                  - arrayTitle: true
+                    key: name
+                    title: Name
+                    type: string
+                  - key: parent
+                    title: Parent
+                    type: string
+                  - key: url
+                    title: Url
+                    type: string
+                  - key: weight
+                    title: Weight
+                    type: number
+
+  - key: params
+    group: params
+    type: pull
+    fields:
+
+      - key: navigation_button
+        type: nest
+        groupdata: true
+        fields:
+          - key: enable
+            type: boolean
+          - key: label
+            type: string
+          - key: link
+            type: string
+

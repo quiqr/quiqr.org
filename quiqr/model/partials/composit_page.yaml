@@ -1,0 +1,71 @@
+---
+fields:
+  - key: draft
+    title: Draft
+    type: boolean
+      #tip: only show locally when draft mode is enabled
+
+  - key: title
+    title: Title
+    type: string
+
+  - key: description
+    type: string
+    title: Meta Description (SEO)
+
+  - key: content_blocks
+    title: Content Blocks
+    type: accordion
+    dynFormSearchKey: content_type
+    fields:
+
+      - key: disabled
+        type: boolean
+
+      - key: content_type
+        title: Content Type
+        arrayTitle: true
+        type: select-from-query
+        query_glob: quiqr/model/partials/block_*.yaml
+        query_string: "#file_base_name[]"
+
+  - key: mainContentInfo
+    content: |
+      Main Content
+    type: info
+    theme: gray
+
+  - key: content_blocks_below_main
+    title: Bottom Content Blocks
+    type: accordion
+    dynFormSearchKey: content_type
+    fields:
+
+      - key: disabled
+        type: boolean
+
+      - key: content_type
+        title: Content Type
+        arrayTitle: true
+        type: select-from-query
+        query_glob: quiqr/model/partials/block_*.yaml
+        query_string: "#file_base_name[]"
+
+  - key: images
+    type: bundle-manager
+    path: "imgs"
+    extensions:
+      - svg
+      - png
+      - jpg
+      - gif
+    fields:
+      - key: thumb
+        title: Thumb
+        type: bundle-image-thumbnail
+
+  - key: mainContent
+    title: Main Text Body (optional)
+    type: markdown
+
+

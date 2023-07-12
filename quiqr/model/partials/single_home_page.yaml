@@ -1,0 +1,223 @@
+---
+file: /data/en/homepage.yml
+previewUrl: /
+title: Homepage
+dataformat: yml
+fields:
+
+  - groupdata: true
+    key: banner
+    title: Banner
+    type: section
+    fields:
+
+      - key: title
+        title: Title
+        type: string
+
+      - key: content
+        title: Content
+        type: string
+        multiLine: true
+
+      - fields:
+          - key: enable
+            title: Enable
+            type: boolean
+          - key: label
+            title: Label
+            type: string
+          - key: link
+            title: Link
+            type: string
+        groupdata: true
+        key: button
+        title: Button
+        type: section
+
+      - key: enable
+        title: Enable
+        type: boolean
+
+      - key: image
+        title: Image
+        type: image-select
+        path: /static/images
+
+
+  - fields:
+      - key: enable
+        title: Enable
+        type: boolean
+      - key: image
+        title: Image
+        type: image-select
+        path: /static/images
+      - fields:
+          - key: content
+            title: Content
+            type: string
+          - key: icon
+            title: Icon
+            type: string
+          - arrayTitle: true
+            key: title
+            title: Title
+            type: string
+        key: left_side
+        title: Left side
+        type: accordion
+      - fields:
+          - key: content
+            title: Content
+            type: string
+          - key: icon
+            title: Icon
+            type: string
+          - arrayTitle: true
+            key: title
+            title: Title
+            type: string
+        key: right_side
+        title: Right side
+        type: accordion
+      - key: title
+        title: Title
+        type: string
+    groupdata: true
+    key: features
+    title: Features
+    type: section
+
+
+  - fields:
+      - key: enable
+        title: Enable
+        type: boolean
+      - key: title
+        title: Title
+        type: string
+    groupdata: true
+    key: products
+    title: Products
+    type: section
+  - fields:
+      - key: content
+        title: Content
+        type: string
+      - key: enable
+        title: Enable
+        type: boolean
+      - key: image
+        title: Image
+        type: image-select
+        path: /static/images
+      - key: title
+        title: Title
+        type: string
+    groupdata: true
+    key: promo
+    title: Promo
+    type: section
+
+
+
+
+  - key: about_product
+    groupdata: true
+    title: About product
+    type: section
+    fields:
+
+      - key: enable
+        title: Enable
+        type: boolean
+
+      - key: title
+        title: Title
+        type: string
+
+      - fields:
+          - fields:
+              - key: enable
+                title: Enable
+                type: boolean
+              - key: label
+                title: Label
+                type: string
+              - key: link
+                title: Link
+                type: string
+            groupdata: true
+            key: button
+            title: Button
+            type: section
+          - key: content
+            title: Content
+            type: string
+          - key: image
+            title: Image
+            type: image-select
+            path: /static/images
+          - arrayTitle: true
+            key: title
+            title: Title
+            type: string
+        key: items
+        title: Items
+        type: accordion
+
+
+  - fields:
+      - key: bg_image
+        title: Bg image
+        type: image-select
+        path: /static/images
+      - key: content
+        title: Content
+        type: string
+      - key: enable
+        title: Enable
+        type: boolean
+      - key: placeholder
+        title: Placeholder
+        type: string
+      - key: title
+        title: Title
+        type: string
+    groupdata: true
+    key: subscription
+    title: Subscription
+    type: section
+  - fields:
+      - key: enable
+        title: Enable
+        type: boolean
+      - fields:
+          - key: content
+            title: Content
+            type: string
+            multiLine: true
+          - key: designation
+            title: Designation
+            type: string
+          - key: image
+            title: Image
+            type: image-select
+            path: /static/images
+
+          - arrayTitle: true
+            key: name
+            title: Name
+            type: string
+        key: testimonial_item
+        title: Testimonial item
+        type: accordion
+      - key: title
+        title: Title
+        type: string
+    groupdata: true
+    key: testimonial
+    title: Testimonial
+    type: section
+

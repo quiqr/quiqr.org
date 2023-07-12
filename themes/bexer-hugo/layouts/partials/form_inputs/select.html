@@ -1,0 +1,11 @@
+<div class="col-md-6 mb-3">
+
+  <label>{{.context.label}}</label>
+
+  <select name="{{.context.name}}"  class="form-control">
+    {{ range .context.options }}
+      <option value="{{.value}}">{{.name}}</option>
+    {{ end }}
+  </select>
+</div>
+

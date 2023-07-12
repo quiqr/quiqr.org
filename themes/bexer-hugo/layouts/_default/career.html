@@ -1,0 +1,17 @@
+<div class="project-item mb-5">
+  <div class="position-relative mb-4 overflow-hidden">
+    <a href="{{ .Permalink }}" aria-label="project image full view">
+      <img loading="lazy" src="/images/career/{{.Params.Image }}" alt="{{ .Title }}" class="img-fluid w-100"
+         style="
+             object-fit: cover;
+             object-position: center;
+             min-height: 250px;
+             max-height: 250px;
+             "
+ >
+    </a>
+  </div>
+  <div class="px-4">
+    <h4><a class="text-dark" href="{{ .Permalink }}" aria-label="project image full view">{{ .Title }}</a></h4>
+  </div>
+</div>

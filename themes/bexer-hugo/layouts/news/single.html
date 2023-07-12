@@ -1,0 +1,39 @@
+{{ define "main" }}
+
+
+<!-- checking blog -->
+{{ if or (eq .Section "post") (eq .Section "posts") (eq .Section "blog") (eq .Section "blogs") (eq .Section "news") (eq .Section "categories") (eq .Section "tags") }}
+
+{{ "<!-- blog details -->" | safeHTML }}
+  <div class="container">
+    <div class="row mt-5">
+      <div class="col-lg-8">
+        {{ "<!-- post thumb -->" | safeHTML }}
+        <div class="position-relative mb-5">
+          <img loading="lazy" src="{{ .Params.Image | absURL }}"  onerror="this.onerror=null;this.src='/images/news/{{.Params.Image }}'" alt="post thumb" class="img-fluid w-100">
+          {{ with .Params.Categories }}{{range first 1 .}} <div class="card-type">{{ . | title }}</div>{{ end }}{{ end }}
+        </div>
+        <div class="card-meta text-uppercase mb-2">On <strong class="text-dark">{{ .PublishDate.Format "2 Jan 2006" }}</strong></div>
+        <h2>{{ .Title }}</h2>
+        <div class="content">
+          {{ .Content }}
+        </div>
+        <!-- comments -->
+        {{ if site.DisqusShortname }}
+        <div class="mt-5">
+          {{ template "_internal/disqus.html" . }}
+        </div>
+        {{ end }}
+      </div>
+      {{ partial "sidebar_news.html" . }}
+    </div>
+  </div>
+{{ "<!-- /blog details -->" | safeHTML }}
+
+<!-- regular page -->
+{{ else }}
+{{ .Render "default" }}
+{{ end }}
+<!-- /regular page -->
+
+{{ end }}

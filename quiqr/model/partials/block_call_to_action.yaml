@@ -1,0 +1,31 @@
+---
+
+title: Call To Action
+fields:
+
+  - key: title
+    title: Title
+    type: string
+
+  - key: bg_image
+    type: image-select
+    path: /static/images/backgrounds
+    title: Background Image
+    buttonTitle: select image
+
+  - key: button
+    groupdata: true
+    title: Button
+    type: nest
+    fields:
+      - key: enable
+        title: Enable
+        type: boolean
+      - key: label
+        title: Label
+        type: string
+      - key: link
+        title: Link
+        type: string
+
+

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="{{ site.LanguageCode | default `en-US` }}">
+
+<head>
+	{{ partial "head.html" . }}
+	{{ partialCached "style.html" . }}
+</head>
+
+<body>
+	{{ partialCached "preloader.html" . }}
+	{{ partial "header.html" . }}
+	<main>
+
+    {{ range .Params.content_blocks }}
+      {{ $partialPath := printf "content_blocks/%s.html" (lower (replace .content_type "_" "-")) }}
+      {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+        {{ if not .disabled }}
+          <a id="{{.id}}" class="hiddena" ></a>
+          {{ partial (print "content_blocks/" (lower (replace .content_type "_" "-"))) (dict "context" . "contextSite" $.Site "contextPage" $.Page )}}
+        {{ end }}
+      {{ else }}
+        <h5 style="color: red">ERROR: PARTIAL FILE DOES NOT EXIST:{{ $partialPath }}</h5>
+      {{ end }}
+    {{ end }}
+
+    {{ block "main" . }}{{ end }}
+
+    {{ range .Params.content_blocks_below_main }}
+      {{ $partialPath := printf "content_blocks/%s.html" (lower (replace .content_type "_" "-")) }}
+      {{ if templates.Exists ( printf "partials/%s" $partialPath ) }}
+        {{ if not .disabled }}
+          <a id="{{.id}}" class="hiddena" ></a>
+          {{ partial (print "content_blocks/" (lower (replace .content_type "_" "-"))) (dict "context" . "contextSite" $.Site "contextPage" $.Page )}}
+        {{ end }}
+      {{ else }}
+        <h5 style="color: red">ERROR: PARTIAL FILE DOES NOT EXIST:{{ $partialPath }}</h5>
+      {{ end }}
+    {{ end }}
+
+	</main>
+	{{ partial "footer.html" . }}
+	{{ partialCached "script.html" . }}
+</body>
+
+</html>

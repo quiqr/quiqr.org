@@ -1,0 +1,52 @@
+fields:
+  - key: title
+    title: Title
+    type: string
+
+  - key: date
+    title: Date
+    type: date
+    default: now
+
+  - key: description
+    title: Description
+    type: string
+    multiLine: true
+
+  - key: icon
+    type: select
+    multiple: false
+    options:
+      - fas fa-award
+      - fas fa-briefcase
+      - fas fa-bullseye
+      - fas fa-calendar-alt
+      - fas fa-chart-bar
+      - fas fa-code
+      - fas fa-facebook
+      - fas fa-gem
+      - fas fa-handshake
+      - fas fa-lightbulb
+      - fas fa-linkedin
+      - fas fa-pinterest
+      - fas fa-smile
+      - fas fa-snowflake
+      - fas fa-tachometer-alt
+      - fas fa-twitter
+
+  - key: image
+    title: Image
+    type: image-select
+    path: /static/images/service
+    buttonTitle: Select Image
+
+  - key: bg_image
+    title: Background Image
+    type: image-select
+    path: /static/images/backgrounds
+    buttonTitle: Select Background Image
+
+  - key: mainContent
+    title: Content
+    type: markdown
+

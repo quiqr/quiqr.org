@@ -1,2 +1,0 @@
-# quiqr.org
-website

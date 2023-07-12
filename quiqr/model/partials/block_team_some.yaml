@@ -1,0 +1,19 @@
+---
+
+title: Team
+fields:
+
+  - key: subtitle
+    type: string
+
+  - key: title
+    type: string
+
+  - key: team_item
+    title: Team Items
+    type: accordion
+    fields:
+      - arrayTitle: true
+        key: page_name
+        title: name
+        type: string

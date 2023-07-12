@@ -1,19 +1,306 @@
-- key: images
-  description: global images
-  _mergePartial: https://raw.githubusercontent.com/quiqr/model-partials/main/singles/global-images.yml
+- key: imagesLogo
+  title: Logo Images
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  hideSaveButton: true
+  file: static/.pogo-images-logo.md
+  fields:
+    - key: image
+      type: bundle-manager
+      path: "/static/images/logo"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
 
-- key: etalage
-  _mergePartial: etalage
+- key: imagesPatterns
+  title: Background Patterns
+  hideExternalEditIcon: true
+  hidePreviewIcon: true
+  hideSaveButton: true
+  file: static/.pogo-images-patterns.md
+  fields:
+    - key: image
+      type: bundle-manager
+      path: "/static/images/backgrounds"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
 
-- key: readme
-  _mergePartial: readme
+- key: imagesParagraph
+  title: Paragraph Images
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  hideSaveButton: true
+  file: static/.pogo-images-paragraph.md
+  fields:
+    - key: image
+      type: bundle-manager
+      path: "/static/images/paragraph"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
 
-- key: frontpage
-  _mergePartial: frontpage
+- key: imagesBackgrounds
+  title: Backgrounds
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  file: static/.pogo-images-backgrounds.md
+  fields:
+    - key: image
+      type: bundle-manager
+      path: "/static/images/backgrounds"
+      addButtonLocationTop: true
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
 
-- key: dashboard
-  _mergePartial: dashboard
+- key: imagesTestimonial
+  title: Testimonial Images
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  file: static/.pogo-images-testimonial.md
+  fields:
+    - key: image
+      addButtonLocationTop: true
+      type: bundle-manager
+      path: "/static/images/testimonial"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
 
-- key: mainConfig
-  _mergePartial: config
+- key: imagesSlider
+  title: Slider Images
+  file: static/.pogo-images-slider.md
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  hideSaveButton: true
+  fields:
+    - key: image
+      type: bundle-manager
+      path: "/static/images/slider"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
 
+- key: imagesTeam
+  title: Team Images
+  file: static/.pogo-images-team.md
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  fields:
+    - key: image
+      type: bundle-manager
+      addButtonLocationTop: true
+      path: "/static/images/team"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
+
+- key: imagesNews
+  title: News Images
+  file: static/.pogo-images-news.md
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  fields:
+    - key: image
+      type: bundle-manager
+      addButtonLocationTop: true
+      path: "/static/images/news"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
+
+- key: imagesBlog
+  title: Blog Images
+  file: static/.pogo-images-blog.md
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  fields:
+    - key: image
+      type: bundle-manager
+      addButtonLocationTop: true
+      path: "/static/images/blog"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
+
+- key: imagesCareer
+  title: Career Images
+  file: static/.pogo-images-career.md
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  fields:
+    - key: image
+      type: bundle-manager
+      addButtonLocationTop: true
+      path: "/static/images/career"
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
+
+- key: imagesProject
+  title: Project Images
+  file: static/.pogo-images-projects.md
+  hidePreviewIcon: true
+  hideExternalEditIcon: true
+  fields:
+    - key: image
+      type: bundle-manager
+      path: "/static/images/project"
+      addButtonLocationTop: true
+      extensions:
+        - svg
+        - png
+        - jpg
+        - gif
+      fields:
+        - key: thumb
+          title: Thumb
+          type: bundle-image-thumbnail
+
+- key: homepage
+  file: /content/english/_index.md
+  previewUrl: /
+  title: Homepage
+  _mergePartial: composit_page
+  fields:
+    - key: description
+      type: hidden
+    - key: mainContentInfo
+      type: hidden
+    - key: mainContent
+      type: hidden
+    - key: content_blocks_below_main
+      type: hidden
+
+- key: blog_overview
+  file: /content/english/blog/_index.md
+  previewUrl: /blog/
+  title: Overview
+  _mergePartial: composit_page
+  fields:
+    - key: mainContent
+      type: hidden
+
+- key: meetup_overview
+  file: /content/english/meetup/_index.md
+  previewUrl: /meetup/
+  title: Overview
+  _mergePartial: composit_page
+  fields:
+    - key: mainContent
+      type: hidden
+
+- key: news_overview
+  file: /content/english/news/_index.md
+  previewUrl: /news/
+  title: Overview
+  _mergePartial: composit_page
+  fields:
+    - key: mainContent
+      type: hidden
+
+- key: service_overview
+  file: /content/english/service/_index.md
+  previewUrl: /service/
+  title: Overview
+  _mergePartial: composit_page
+  fields:
+    - key: mainContent
+      type: hidden
+
+- key: career_overview
+  file: /content/english/career/_index.md
+  previewUrl: /career/
+  title: Overview
+  _mergePartial: composit_page
+  fields:
+    - key: mainContent
+      type: hidden
+
+- key: project_overview
+  file: /content/english/project/_index.md
+  previewUrl: /project/
+  title: Overview
+  _mergePartial: composit_page
+  fields:
+    - key: mainContent
+      type: hidden
+
+- key: design
+  _mergePartial: single_design
+
+- key: languages
+  title: Menus
+  file: /config.yaml
+  _mergePartial: single_conf_menu
+
+- key: menus_alt
+  title: Menus
+  file: /config.yaml
+  _mergePartial: single_conf_alt_menu
+
+- key: params
+  title: Params
+  file: /config.yaml
+  _mergePartial: single_conf_params

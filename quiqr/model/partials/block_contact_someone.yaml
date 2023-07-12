@@ -1,0 +1,26 @@
+---
+
+title: Form
+fields:
+
+  - key: person_name
+    title: Who to contact?
+    arrayTitle: true
+    type: select-from-query
+    query_glob: content/english/team/*/index.md
+    query_string: "#parent_dir[]"
+
+  - key: message
+    title: Call to action message
+    type: string
+
+  - key: formid
+    title: Form ID
+    arrayTitle: true
+    type: select-from-query
+    query_glob: data/forms/*.yaml
+    query_string: "#file_base_name[]"
+
+  - key: send_button
+    type: string
+

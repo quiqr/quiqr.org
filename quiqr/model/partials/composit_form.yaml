@@ -1,0 +1,48 @@
+---
+title: Forms
+folder: data/forms/
+extension: yaml
+dataformat: yaml
+hidePreviewIcon: true
+itemtitle: Form
+fields:
+
+  - key: form_fields
+    title: Form Fields
+    type: accordion
+    dynFormSearchKey: form_field_type
+    fields:
+      - key: label
+        arrayTitle: true
+        type: string
+
+      - key: name
+        type: string
+
+      - key: required
+        type: boolean
+
+      - key: form_field_type
+        type: select
+          #autoSave: true
+        options:
+          - Text
+          - Radio
+          - Empty
+          - Label
+          - Hidden
+          - Select
+          - Checkbox
+          - Hidden
+          - Textarea
+
+  - key: submit_text
+    title: Submit Button Text
+    type: string
+
+  - key: post_action
+    title: Post Action URL
+    type: string
+
+
+

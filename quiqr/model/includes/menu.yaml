@@ -1,25 +1,59 @@
-- key: Content
-  title: Content
+- title: Pages
   menuItems:
-    - key: frontpage
-    - key: pages
-    - key: posts
+    - key: homepage
+    - key: pagesother
 
-- key: images
-  title: Images
+- title: Projects
   menuItems:
-    - key: images
+    - key: project_overview
+    - key: project_items
 
-- key: Settings
-  title: "Settings "
+#- title: Services
+#  menuItems:
+#    - key: service_overview
+#    - key: service_items
+
+- title: Careers
   menuItems:
-    - key: mainConfig
+    - key: career_overview
+    - key: career_items
 
-- key: Developer
-  title: "Developer"
-  matchRole: siteDeveloper
+- title: Blog
   menuItems:
-    - key: dashboard
-    - key: etalage
-    - key: readme
+    - key: blog_overview
+    - key: blog_items
 
+- title: Meetups
+  menuItems:
+    - key: meetup_overview
+    - key: meetup_items
+
+- title: Company News
+  menuItems:
+    - key: news_overview
+    - key: news_items
+
+- title: Assets
+  menuItems:
+    - key: imagesLogo
+    - key: imagesBackgrounds
+    - key: imagesParagraph
+    - key: imagesSlider
+    - key: imagesTeam
+    - key: imagesTestimonial
+    - key: imagesBlog
+    - key: imagesNews
+    - key: imagesProject
+    - key: imagesCareer
+
+- title: Data
+  menuItems:
+    - key: forms
+    - key: team_items
+    - key: testimonials
+
+- title: Settings
+  menuItems:
+    - key: menus_alt
+    - key: design
+    - key: params

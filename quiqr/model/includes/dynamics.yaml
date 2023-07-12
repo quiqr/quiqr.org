@@ -1,0 +1,96 @@
+---
+
+- key: dynbxslider
+  _mergePartial: block_slider
+  content_type: block_slider
+
+- key: dynbxbannerfeature
+  _mergePartial: block_banner_feature
+  content_type: block_banner_feature
+
+- key: dynbximgparagraph
+  _mergePartial: block_img_paragraph
+  content_type: block_img_paragraph
+
+- key: dynbxfunstats
+  _mergePartial: block_fun_stats
+  content_type: block_fun_stats
+
+- key: dynbxpageshighlighted
+  _mergePartial: block_pages_highlighted
+  content_type: block_pages_highlighted
+
+- key: dynbxservicelist
+  _mergePartial: block_service_list
+  content_type: block_service_list
+
+- key: dynbxteamsome
+  _mergePartial: block_team_some
+  content_type: block_team_some
+
+- key: dynbxteamone
+  _mergePartial: block_team_one
+  content_type: block_team_one
+
+- key: dynbxrawhtml
+  _mergePartial: block_raw_html
+  content_type: block_raw_html
+
+- key: dynbxprojectsome
+  _mergePartial: block_project_some
+  content_type: block_project_some
+
+- key: dynbxtestimonial
+  _mergePartial: block_testimonials
+  content_type: block_testimonials
+
+- key: dynbx123
+  _mergePartial: block_123
+  content_type: block_123
+
+- key: dynbxcta
+  _mergePartial: block_call_to_action
+  content_type: block_call_to_action
+
+- key: dynbxnews_latest
+  _mergePartial: block_news_latest
+  content_type: block_news_latest
+
+- key: dynbxblog_latest
+  _mergePartial: block_blog_latest
+  content_type: block_blog_latest
+
+- key: dynbxtitleandpath
+  _mergePartial: block_title_and_path
+  content_type: block_title_and_path
+
+- key: dynbxcontact
+  _mergePartial: block_contact
+  content_type: block_contact
+
+- key: dynbxcontactgeneral
+  _mergePartial: block_contact_general
+  content_type: block_contact_general
+- key: dynbxiconcards
+  _mergePartial: block_icon_cards
+  content_type: block_icon_cards
+
+
+- key: dynbxcontactsomeone
+  _mergePartial: block_contact_someone
+  content_type: block_contact_someone
+
+- content_type: block_form
+  _mergePartial: block_form
+
+########
+
+- key: dynffselect
+  _mergePartial: dynformfield_select
+
+- key: dynffradio
+  _mergePartial: dynformfield_radio
+
+- key: dynffhidden
+  _mergePartial: dynformfield_hidden
+

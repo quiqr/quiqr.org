@@ -1,0 +1,27 @@
+key: dynfunstats
+title: Fun Stats
+fields:
+
+  - key: css_override
+    type: string
+    multiLine: true
+
+  - key: card_items
+    type: accordion
+    fields:
+      - key: icon
+        type: select-from-query
+        multiple: false
+        query_glob: data/font-awesome.json
+        query_string: .icons[]
+
+      - arrayTitle: true
+        key: title
+        name: Title
+        type: string
+
+      - key: markdown_text
+        type: string
+        multiLine: true
+
+

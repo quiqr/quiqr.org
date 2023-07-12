@@ -1,0 +1,42 @@
+fields:
+  - key: title
+    title: Title
+    type: string
+
+  - key: tags
+    title: Tags
+    type: chips
+
+  - key: categories
+    title: Categories
+    type: chips
+
+  - key: author
+    type: string
+
+  - key: date
+    title: Date
+    type: date
+    default: now
+
+  - key: image
+    title: Image
+    type: image-select
+    path: /static/images/blog
+    buttonTitle: Select Image
+
+  - key: bg_image
+    title: Background Image
+    type: image-select
+    path: /static/images/backgrounds
+    buttonTitle: Select Background Image
+
+  - key: description
+    title: Description
+    type: string
+    multiLine: true
+
+  - key: mainContent
+    title: Content
+    type: markdown
+

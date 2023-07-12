@@ -1,70 +1,269 @@
-- dataformat: yaml
-  description: Pages like about, etc...
-  folder: content/page
+- key: pagesother
+  title: Other Pages
+  folder: content/english/pages/
+  previewUrlBase: /pages/
+  extension: md
+  dataformat: yaml
   itemtitle: Page
-  key: pages
-  title: Pages
-  hideIndex: true
-  includeSubdirs: true
-  extension: md
+  _mergePartial: composit_page
   fields:
-    - key: title
-      title: Title
-      type: string
-    - key: description
-      title: Description
-      type: string
-    - key: mainContent
-      title: Main content
-      type: markdown
+    - key: mainContentInfo
+      type: hidden
 
-- dataformat: yaml
-  description: Blog Posts
-  folder: content/post
-  itemtitle: Post
-  key: posts
-  title: Posts
+- key: project_items
+  title: Items
   hideIndex: true
+  folder: content/english/project/
   extension: md
+  dataformat: yaml
+  itemtitle: Project
+  _mergePartial: composit_page
   fields:
-    - key: title
-      title: Title
-      type: string
+    - key: mainContentInfo
+      type: hidden
+
     - key: date
       title: Date
       type: date
-    - key: series
-      title: Series
-      type: chips
-    - key: math
-      title: Math
-      type: boolean
-    - key: categories
-      title: Categories
-      type: chips
+      default: now
+
+    - key: client
+      type: string
+
+    - key: category
+      type: string
+
+    - key: status
+      type: string
+
+    - key: image
+      title: Image
+      type: image-select
+      path: /static/images/project
+      buttonTitle: Select Image
+
+- key: service_items
+  title: Items
+  hideIndex: true
+  folder: content/english/service/
+  previewUrlBase: /service/
+  extension: md
+  dataformat: yaml
+  itemtitle: Service
+  _mergePartial: composit_page
+  fields:
+    - key: mainContentInfo
+      type: hidden
+
+    - key: icon
+      type: select
+      multiple: false
+      options:
+        - fas fa-award
+        - fas fa-briefcase
+        - fas fa-bullseye
+        - fas fa-calendar-alt
+        - fas fa-chart-bar
+        - fas fa-code
+        - fas fa-facebook
+        - fas fa-gem
+        - fas fa-handshake
+        - fas fa-lightbulb
+        - fas fa-linkedin
+        - fas fa-pinterest
+        - fas fa-smile
+        - fas fa-snowflake
+        - fas fa-tachometer-alt
+        - fas fa-twitter
+
+    - key: image
+      title: Image
+      type: image-select
+      path: /static/images/service
+      buttonTitle: Select Image
+
+- key: blog_items
+  title: Items
+  hideIndex: true
+  folder: content/english/blog/
+  extension: md
+  previewUrlBase: /blog/
+  dataformat: yaml
+  itemtitle: Blog item
+  _mergePartial: composit_page
+  fields:
+    - key: mainContentInfo
+      type: hidden
+
     - key: tags
       title: Tags
       type: chips
+
+    - key: categories
+      title: Categories
+      type: chips
+
     - key: author
-      title: Author
       type: string
+
+    - key: date
+      title: Date
+      type: date
+      default: now
+
+    - key: image
+      title: Image
+      type: image-select
+      path: /static/images/blog
+      buttonTitle: Select Image
+
+- key: meetup_items
+  title: Items
+  hideIndex: true
+  folder: content/english/meetup/
+  extension: md
+  previewUrlBase: /meetup/
+  dataformat: yaml
+  itemtitle: Meetup item
+  _mergePartial: composit_page
+  sortkey: date
+  fields:
+    - key: mainContentInfo
+      type: hidden
+
+    - key: date
+      title: Date
+      type: date
+      default: now
+
+    - key: image
+      title: Image
+      type: image-select
+      path: /static/images/meetup
+      buttonTitle: Select Image
+
+- key: news_items
+  title: Items
+  hideIndex: true
+  folder: content/english/news/
+  extension: md
+  previewUrlBase: /news/
+  dataformat: yaml
+  itemtitle: News item
+  _mergePartial: composit_page
+  sortkey: date
+  fields:
+    - key: mainContentInfo
+      type: hidden
+
+    - key: date
+      title: Date
+      type: date
+      default: now
+
+    - key: image
+      title: Image
+      type: image-select
+      path: /static/images/news
+      buttonTitle: Select Image
+
+- key: testimonials
+
+  title: Testimonials
+  folder: data/testimonials/
+  extension: yaml
+  dataformat: yaml
+  hidePreviewIcon: true
+  itemtitle: Testimonial
+
+  fields:
+    - arrayTitle: true
+      key: name
+      type: string
+
+    - key: designation
+      type: string
+
+    - key: content
+      title: Content
+      type: string
+      multiLine: true
+
+    - key: client_image
+      type: image-select
+      path: /static/images/testimonial
+      title: Client Image
+      buttonTitle: select image
+
+- key: team_items
+  title: Team
+  folder: content/english/team/
+  previewUrlBase: /team/
+  extension: md
+  dataformat: yaml
+  itemtitle: Person
+  fields:
+    - key: mainContentInfo
+      type: hidden
+
+    - key: title
+      title: Name
+      type: string
+
     - key: description
       title: Description
       type: string
-    - key: mainContent
-      title: Main content
-      type: markdown
+      multiLine: true
 
-    - key: images
-      type: bundle-manager
-      path: ./images
-      extensions:
-        - svg
-        - png
-        - jpg
-        - gif
+    - key: social
+      type: accordion
       fields:
-        - key: thumb
-          title: Thumb
-          type: bundle-image-thumbnail
 
+      - key: icon
+        type: string
+        arrayTitle: true
+
+      - key: link
+        type: string
+
+    - key: image
+      title: Image
+      type: image-select
+      path: /static/images/team
+      buttonTitle: Select Image
+
+
+- key: career_items
+  title: Careers
+  folder: content/english/career/
+  previewUrlBase: /career/
+  extension: md
+  hideIndex: true
+  dataformat: yaml
+  itemtitle: Vacancy
+  _mergePartial: composit_page
+  fields:
+    - key: mainContentInfo
+      type: hidden
+    - key: jobTitle
+      title: Job title
+      type: string
+
+    - key: jobType
+      title: Job type
+      type: select
+      options:
+        - Full-time
+        - Part-time
+
+    - key: location
+      type: string
+
+    - key: image
+      title: Image
+      type: image-select
+      path: /static/images/career
+      buttonTitle: Select Image
+
+- key: forms
+  _mergePartial: composit_form

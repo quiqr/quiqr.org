@@ -1,0 +1,28 @@
+{{ "<!-- slider -->" | safeHTML }}
+<section>
+  <div class="hero-slider">
+    {{ range .context.slider_item }}
+    {{ "<!-- slider item -->" | safeHTML }}
+    <div class="hero-slider-item bg-cover hero-section" style="background-image: url('/images/slider/{{ .bg_image }}');">
+      <!-- this image is for trigger this section fallback background image -->
+      <img class="d-none" src="/images/slider/{{ .bg_image  }}"
+        onerror="this.onerror=null;this.parentElement.style.backgroundImage= 'url(/images/slider/{{ .bg_image }})'">
+      <div class="container">
+        <div class="row">
+          <div style="background-color:#ffffff44;padding:1em;" class="col-lg-6" data-duration-in=".3" data-animation-in="{{ .animation }}" data-delay-in=".1">
+            <h3 class="mb-0 letter-spacing text-primary">{{ .subtitle | markdownify }}</h4>
+            <h1 class="mb-4">{{ .title | markdownify }}</h1>
+            {{ if .button.enable }}
+            <p class="mb-5">{{ .content | markdownify }}</p>
+            <a href="{{ .button.link | absLangURL }}" class="btn btn-primary-outline" data-duration-in=".3"
+              data-animation-in="{{ .button.animation }}" data-delay-in=".4">{{ .button.label }}</a>
+            {{ end }}
+          </div>
+        </div>
+      </div>
+    </div>
+    {{ end }}
+  </div>
+</section>
+{{ "<!-- /slider -->" | safeHTML }}
+

@@ -1,0 +1,29 @@
+fields:
+  - key: title
+    title: Title
+    type: string
+
+  - key: tags
+    title: Tags
+    type: chips
+
+  - key: date
+    title: Date
+    type: date
+    default: now
+
+  - key: image
+    title: Image
+    type: image-select
+    path: /static/images
+    buttonTitle: Select Image
+
+  - key: description
+    title: Description
+    type: string
+    multiLine: true
+
+  - key: mainContent
+    title: Content
+    type: markdown
+

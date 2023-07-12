@@ -1,0 +1,14 @@
+---
+
+title: Page Title
+fields:
+
+    #  - key: title
+    #    title: Title
+    #    type: string
+
+  - key: bg_image
+    type: image-select
+    path: /static/images/backgrounds
+    title: Background Image
+    buttonTitle: select image

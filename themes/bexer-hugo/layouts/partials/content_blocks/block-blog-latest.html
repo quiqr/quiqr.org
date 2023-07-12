@@ -1,0 +1,31 @@
+{{$show_item:= .context.numitems}}
+{{$title:= .context.title}}
+{{$subtitle:= .context.subtitle}}
+
+{{ with site.GetPage "blog" }}
+<section class="section bg-gray-white position-relative">
+  <div class="container">
+    <div class="row">
+      <div class="col-12 text-center">
+        <div class="section-title-border mx-auto"></div>
+        <h4 class="section-title-sm">{{ $subtitle | markdownify }}</h4>
+        <h2 class="section-title">{{ $title }}</h2>
+      </div>
+    </div>
+    <div class="row">
+      {{ "<!-- blog post -->" | safeHTML }}
+      {{ range first ($show_item | default 3) .Data.Pages }}
+      <article class="col-lg-4 col-sm-6 mb-lg-0 mb-4 zindex-1">
+        {{ .Render "post" }}
+      </article>
+      {{ end }}
+    </div>
+  </div>
+  {{ "<!-- background shapes -->" | safeHTML }}
+  <img loading="lazy" class="img-fluid blog-shape-left" src="{{`images/backgrounds/blog-bg-left.webp` | relURL }}"
+    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-left.png` | relURL }}'">
+  <img loading="lazy" class="img-fluid blog-shape-right" src="{{`images/backgrounds/blog-bg-right.webp` | relURL }}"
+    alt="" onerror="this.src='{{`images/backgrounds/blog-bg-right.png` | relURL }}'">
+</section>
+{{ end }}
+

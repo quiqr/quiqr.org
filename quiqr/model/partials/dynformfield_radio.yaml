@@ -1,0 +1,12 @@
+key: dynffradio
+form_field_type: Radio
+fields:
+
+  - key: options
+    title: Options
+    type: accordion
+    fields:
+
+      - key: value
+        arrayTitle: true
+        type: string

@@ -1,0 +1,37 @@
+{{ define "main" }}
+
+    <div class="container">
+      <div class="row mt-5">
+        <div class="col-lg-8">
+          <img loading="lazy" class="img-fluid w-100 mb-5" src="{{ .Params.Image_webp | absURL }}"  onerror="this.onerror=null;this.src='/images/career/{{.Params.Image }}'" alt="career image">
+          <div class="row no-gutters bg-secondary p-sm-5 p-4 mb-5">
+            <div class="col-md-4 col-9 mb-4 mb-md-0">
+              <div class="border-md-right border-muted ml-4">
+                <h5 class="text-white text-uppercase">Job Title</h5>
+                <span class="text-light">{{ .Params.jobTitle }}</span>
+              </div>
+            </div>
+            <div class="col-md-4 col-9 mb-4 mb-md-0">
+              <div class="border-md-right border-muted ml-4">
+                <h5 class="text-white text-uppercase">Type</h5>
+                <span class="text-light">{{ .Params.jobType }}</span>
+              </div>
+            </div>
+            <div class="col-md-4 col-9 mb-4 mb-md-0">
+              <div class="ml-4">
+                <h5 class="text-white text-uppercase">Location</h5>
+                <span class="text-light">{{ .Params.location }}</span>
+              </div>
+            </div>
+          </div>
+          <div class="content">
+            {{ .Content }}
+          </div>
+        </div>
+        <aside class="col-lg-4">
+          {{ partial "quick-contact.html" . }}
+        </aside>
+      </div>
+    </div>
+
+{{ end }}

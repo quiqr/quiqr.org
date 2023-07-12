@@ -1,0 +1,19 @@
+key: dynffselect
+form_field_type: Select
+fields:
+
+  - key: options
+    title: Options
+    type: accordion
+    fields:
+
+      - arrayTitle: true
+        key: name
+        type: string
+
+      - key: value
+        type: string
+
+
+
+

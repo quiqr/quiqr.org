@@ -1,0 +1,13 @@
+key: dynbxbloglatest
+fields:
+
+  - key: subtitle
+    type: string
+
+  - key: title
+    type: string
+
+  - key: numitems
+    title: Number of blog items
+    type: number
+
