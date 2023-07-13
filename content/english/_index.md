@@ -4,7 +4,7 @@ content_blocks:
   - id: get a quote
     content_type: block_call_to_action
     enable: true
-    title: A blazingly fast Hugo App
+    title: A blazingly fast Hugo CMS App
     testimonial_item: []
     button:
       enable: true
@@ -29,9 +29,9 @@ content_blocks:
       title: Sites
       content: Old fashioned static HTML files.
       bullet_point:
-        - content: Cheap Hosting, less resource
-        - content: Unhackable, secure by desing
-        - content: Unbreakable, No updates needed
+        - content: Cheap Hosting, less resources
+        - content: Unhackable, secure by design
+        - content: Unbreakable, no updates needed
     three:
       number: We ♥
       title: Hugo
@@ -119,6 +119,10 @@ mainContentInfo: ''
 draft: false
 
 ---
+
+
+
+
 
 
 
