@@ -198,6 +198,11 @@
     border: 1px solid {{ $.Site.Data.design.secondary_color }};
     color: {{ $.Site.Data.design.secondary_color }};
   }
+
+  a {
+    color: {{ $.Site.Data.design.secondary_color_darker }};
+  }
+
   a:hover {
     color: {{ $.Site.Data.design.secondary_color }};
   }
@@ -208,9 +213,11 @@
     background: {{ $.Site.Data.design.secondary_color }} !important;
   }
 
+  /*
   p a {
     color: #007bff;
   }
+  */
 
   a h4:hover, a h5:hover {
     color: {{ $.Site.Data.design.secondary_color }} !important;
