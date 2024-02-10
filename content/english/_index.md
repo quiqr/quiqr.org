@@ -107,9 +107,16 @@ content_blocks:
       label: ''
       link: ''
     subtitle: Ready to use site templates.
-    content: >-
-      Create sites using beautifully designed Quiqr templates. A Quiqr template
-      includes a friendly CMS and is ready to publish.
+    content: >+
+      The Quiqr Desktop application gives direct access to all community
+      templates with a built in Gallery. Create sites using thesee beautifully
+      designed Quiqr templates. A template includes a friendly CMS and is ready
+      to publish.
+
+
+      You can preview the [HTML version of the Quiqr Template
+      Gallery](https://quiqr.github.io/quiqr-community-templates/). 
+
     bg_image: pricing-table-bg.png
     image: template-gallery.png
     style: ImageLeft
@@ -119,6 +126,8 @@ mainContentInfo: ''
 draft: false
 
 ---
+
+
 
 
 
