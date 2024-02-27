@@ -38,7 +38,7 @@ languages:
     contentDir: content/english
     weight: 1
     home: home
-    copyright: © 2023 - Quiqr
+    copyright: © 2024 - Quiqr
     footer_content: '**With Quiqr you can build, share, maintain and publish websites.**'
 params:
   debugprint: true
@@ -66,7 +66,7 @@ params:
     enable: false
     preloader: ''
   navigation_button:
-    enable: true
+    enable: false
     label: download now
     link: /pages/download/
   subscription:
@@ -109,32 +109,36 @@ params:
             url: /pages/fast
             disabled: false
         disabled: true
+      - name: Template Gallery
+        url: https://quiqr.github.io/quiqr-community-templates/
+        disabled: false
+        submenus: []
       - name: Documentation
         url: https://book.quiqr.org
         disabled: false
         submenus: []
-      - name: Template Gallery
-        url: /pages/templates/
-        disabled: true
-        submenus: []
-      - name: Community
-        submenus: []
-        url: /pages/community
+      - name: about
+        url: /pages/about
         disabled: false
+        submenus: []
       - name: GitHub
         url: https://github.com/quiqr/quiqr-desktop
         disabled: true
         submenus: []
       - name: forum
         url: https://github.com/quiqr/quiqr-desktop/discussions
+        disabled: true
+        submenus: []
+      - name: Download
+        url: /pages/download/
         disabled: false
         submenus: []
+      - name: Community
+        submenus: []
+        url: /pages/community
+        disabled: true
       - name: Blog
         url: /blog
-        disabled: false
-        submenus: []
-      - name: about
-        url: /pages/about
         disabled: false
         submenus: []
     footer: []

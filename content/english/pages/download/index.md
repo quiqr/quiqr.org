@@ -33,7 +33,7 @@ content_blocks_below_main:
 
 
         <span style="font-size:80%">AppImage,  should run on any Linux
-        distribution. [More Linux
+        distribution. Having troubles on Ubuntu? Install libfuse2.  [More Linux
         packages](https://github.com/quiqr/quiqr-desktop/releases/latest) are
         available. </span>
       title: Linux

@@ -99,10 +99,15 @@
             </div>
           </div>
           {{ end }}
+          <!-- Place this tag where you want the button to render. -->
+          &nbsp;<a class="github-button" href="https://github.com/quiqr/quiqr-desktop" data-color-scheme="no-preference: light; light: light; dark: dark;" data-size="large" data-show-count="true" aria-label="Star quiqr/quiqr-desktop on GitHub">Star</a>&nbsp;
+
           {{ if site.Params.navigation_button.enable }}
           {{ "<!-- get start btn -->" | safeHTML }}
           <a href="{{ site.Params.navigation_button.link | absLangURL }}" class="btn btn-primary hover-ripple" style="white-space: nowrap;">{{ site.Params.navigation_button.label }}</a>
           {{ end }}
+
+
         </div>
       </nav>
     </div>
