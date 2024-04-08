@@ -16,5 +16,5 @@ image: screenshot2.png
 
 ---
 
-We have published a new free and open source Quiqr Template specially made for video and photo artists how want to present their work. Read more about this template: https://github.com/mipmip/quiqr-yet-another-gallery-template or download the template from within your Quiqr application.
+We have published a new free and open source Quiqr Template. The template "Yet Another Gallery" is specially made for video and photo artists how want to present their work. Read more about this template: https://github.com/mipmip/quiqr-yet-another-gallery-template or download the template from within your Quiqr application.
 
