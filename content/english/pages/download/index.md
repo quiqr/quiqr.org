@@ -57,9 +57,9 @@ content_blocks_below_main:
     html: |-
       <style>
       .section{
-      padding-bottom: 50px;
+        padding-top: 50px;
+        padding-bottom: 50px;
       }
-
       </style>
       <script>
         function setLatestVersion(url, id, linktext, href_postfix){
@@ -86,12 +86,27 @@ content_blocks_below_main:
           setLatestVersion(url_win, 'latest-windows-link' ,  "Quiqr for Windows", "_win.exe");
         });
       </script>
+  - disabled: false
+    content_type: block_img_paragraph
+    title: ''
+    html: ''
+    button:
+      link: https://github.com/quiqr/quiqr-desktop/releases
+      label: All vesions
+      enable: false
+    content: >-
+      Download [pre-releases and older versions and installers for other
+      platforms can be downloaded from
+      GitHub](https://github.com/quiqr/quiqr-desktop/releases).
+    style: ImageRight
+    bg_image: cta-sm-right.png
+    image: images.jpg
+    subtitle: Other Quiqr Versions
 mainContentInfo: ''
+resources: []
 
 ---
 
 ### Download Quiqr
 
 Quiqr is available for Mac, Windows and Linux. Here are the latest installers. 
-
-<span style="font-size:80%">Download [older versions and installers for other platforms on GitHub](https://github.com/quiqr/quiqr-desktop/releases).</span>
