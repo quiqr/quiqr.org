@@ -47,7 +47,7 @@ content_blocks:
     stat_item: []
     button: {}
     resources: []
-    subtitle: Download and start publising
+    subtitle: Download and start publishing
     title: Batteries included
     content: >-
       If you want to publish your site with a ready made template or you want to
