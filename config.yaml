@@ -87,6 +87,8 @@ params:
       link: https://mastodon.social/@quiqr
     - icon: fab fa-github
       link: https://github.com/quiqr
+    - icon: fab fa-discord
+      link: https://discord.gg/nJ2JH7jvmV
   resources: []
   menus_alt:
     main:
